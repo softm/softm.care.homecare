@@ -11,8 +11,8 @@ android {
         applicationId 'net.softm.care.homecare'
         minSdk 24 // SOFTM-PLAY-PROTECTION 날짜:20261007 : 활성화된 Play 자동 보호의 최소 SDK 요구 충족
         targetSdk 36
-        versionCode 8
-        versionName '1.0.6'
+        versionCode 9
+        versionName '1.0.7'
     }
     compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
     signingConfigs {
@@ -35,7 +35,7 @@ android {
 
 dependencies {
     implementation 'com.github.softm:hannun-in-app-update-android:1.0.0'
-    implementation 'com.google.android.gms:play-services-ads:23.6.0' // SOFTM-ADMOB-NATIVE 날짜:20261010 : 현재 Gradle 린트 호환 범위에서 앱 하단 네이티브 광고 표시
+    implementation 'com.github.softm:hannun-admob-android:1.0.5'
 }
 
 // 서명 설정 누락 시 미서명 산출물을 배포하지 않도록 중단합니다.
