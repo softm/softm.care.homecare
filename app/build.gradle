@@ -11,8 +11,8 @@ android {
         applicationId 'net.softm.care.homecare'
         minSdk 24 // SOFTM-PLAY-PROTECTION 날짜:20261007 : 활성화된 Play 자동 보호의 최소 SDK 요구 충족
         targetSdk 36
-        versionCode 7 // SOFTM-ADMOB-RELEASE 날짜:20261012 : autorunnavi 광고 단위로 교체한 Play 재업로드 빌드를 구분
-        versionName '1.0.5' // SOFTM-ADMOB-RELEASE 날짜:20261012 : 동일 계정 광고 ID를 적용한 공개 배포 버전을 식별
+        versionCode 8
+        versionName '1.0.6'
     }
     compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
     signingConfigs {
