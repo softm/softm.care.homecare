@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_margin="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:id="@+id/lnOverlay"
+    android:background="@drawable/overlay_white">
+<!--    android:background="#00000000"    -->
+<!--    android:background="#1f3442"-->
+<!--    android:background="#F7CDB7"-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:layout_margin="0dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            >
+            <Button
+                android:id="@+id/btnGoNavi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tmap"
+                android:background="@drawable/chip_pink"
+                android:enabled="true"
+                android:textColor="#FFFFFF"
+                android:minHeight="20dp"
+                android:minWidth="50dp"
+                android:textSize="@dimen/guide_tiny_text_font_size"
+                android:textStyle="bold"
+                android:gravity="center|center_horizontal"
+                android:layout_gravity="center|center_vertical"
+                />
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|bottom"
+                >
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:id="@+id/btnLogo"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/logo"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:gravity="center|center_horizontal"
+                    android:text="20"
+                    android:id="@+id/txtCounter"
+                    android:textColor="@color/red_a100"
+                    android:textSize="23dp"
+                    android:textStyle="bold"
+                    />
+            </FrameLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:id="@+id/lnSub"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="8dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                >
+                <TextView
+                    android:id="@+id/txtAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Addresss"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_marginTop="0dp"
+                    android:textSize="@dimen/guide_small_text_font_size"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_gravity="center_vertical"
+                    />
+  <!--
+
+  -->
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/btnSetting"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_settings_18dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/transparent"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/btnMain"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_home_24px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/transparent"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                >
+                <Button
+                    android:id="@+id/btnHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home"
+                    android:background="@drawable/chip_pink"
+                    android:enabled="true"
+                    android:textColor="#FFFFFF"
+                    android:minHeight="25dp"
+                    android:minWidth="50dp"
+                    android:textSize="@dimen/guide_small_text_font_size"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    />
+                <Button
+                    android:id="@+id/btnCompany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/company"
+                    android:background="@drawable/chip_yellowgreen"
+                    android:enabled="true"
+                    android:textColor="#FFFFFF"
+                    android:minHeight="25dp"
+                    android:minWidth="50dp"
+                    android:textSize="@dimen/guide_small_text_font_size"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    />
+                <Button
+                    android:id="@+id/btnDestination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/destination"
+                    android:background="@drawable/chip_skyblue"
+                    android:enabled="true"
+                    android:textColor="#FFFFFF"
+                    android:minHeight="25dp"
+                    android:minWidth="50dp"
+                    android:textSize="@dimen/guide_small_text_font_size"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    >
+                    <Button
+                        android:id="@+id/btnClose"
+                        android:layout_width="55dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/guide_close"
+                        android:background="@drawable/chip_graydeep"
+                        android:enabled="true"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:minWidth="50dp"
+                        android:minHeight="25dp"
+                        android:textSize="@dimen/guide_small_text_font_size"
+                        android:textStyle="normal"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:paddingBottom="0dp"
+        android:visibility="gone"
+        android:id="@+id/lnChip"
+        >
+        <!--        <View-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="1dp"-->
+        <!--            android:background="@android:color/darker_gray"-->
+        <!--            android:id="@+id/chip_cloud_line"-->
+        <!--            />-->
+
+        <!--    android:background="#F7CDB7"-->
+        <com.adroitandroid.chipcloud.ChipCloud
+            android:id="@+id/chip_cloud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="3dp"
+            >
+        </com.adroitandroid.chipcloud.ChipCloud>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/txtGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overlay_guide_5"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/guide_text_font_size"
+            />
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@drawable/button_default"
+            android:enabled="true"
+            android:minWidth="40dp"
+            android:minHeight="40dp"
+            android:text="@string/guide_start"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/guide_button_font_size"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guide_close"
+            android:background="@drawable/button_gray"
+            android:enabled="true"
+            android:textColor="#000000"
+            android:minHeight="40dp"
+            android:minWidth="40dp"
+            android:textSize="@dimen/guide_button_font_size"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            />
+
+    </LinearLayout>
+
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+        >
+
+        <Button
+            android:id="@+id/btnCloseHour"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@drawable/chip_default"
+            android:enabled="true"
+            android:gravity="center_vertical"
+            android:minWidth="220dp"
+            android:minHeight="40dp"
+            android:text="@string/guide_donot_navi_hour"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/guide_button_font_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/lnGuide"
+android:visibility="gone"        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:visibility="visible"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+        >
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+   <!-- <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnCloseHour2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@drawable/chip_orange"
+            android:enabled="true"
+            android:gravity="center_vertical"
+            android:minWidth="220dp"
+            android:minHeight="40dp"
+            android:text="@string/guide_donot_navi_hour"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/guide_button_font_size"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/chip_pink"
+            android:enabled="true"
+            android:gravity="center"
+            android:minWidth="215dp"
+            android:minHeight="40dp"
+            android:text="@string/guide_donot_navi_hour"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/guide_button_font_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+-->
+</LinearLayout>

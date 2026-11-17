@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name_com.skt.tmap.ku">티맵</string>
+    <string name="app_name_com.locnall.KimGiSa">카카오내비</string>
+    <string name="app_name_com.nhn.android.nmap">네이버지도</string>
+    <string name="app_name_net.daum.android.map">카카오맵</string>
+    <string name="app_name_com.google.android.apps.maps">구글지도</string>
+    <string name="app_name_com.google.android.apps.mapslite">구글맵고</string>
+    <string name="app_name_com.google.android.apps.navlite">구글맵고(라이티)</string>
+    <string name="app_name_kt.navi">원내비</string>
+    <string name="app_name_com.mnsoft.mappyobn">맵피</string>
+    <string name="app_name_kr.mappers.AtlanSmart">아틀란</string>
+    <string name="app_name_com.waze">Waze</string>
+    <string name="app_name_net.osmand">Osmand</string>
+    <string name="app_name_net.osmand.plus">Osmand+</string>
+    <string name="app_name_com.sygic.aura">Sygic</string>
+    <string name="app_name_com.mapswithme.maps.pro">MAPS.ME</string>
+    <string name="app_name_com.baidu.BaiduMap">百度地图</string>
+    <string name="app_name_com.autonavi.minimap">高德地图</string>
+
+    <string name="app_name_com.sec.android.app.music">삼성 뮤직</string>
+    <string name="app_name_com.google.android.apps.youtube.music">YouTube Music</string>
+    <string name="app_name_com.google.android.youtube">유튜브</string>
+    <string name="app_name_com.apple.android.music">Apple Music</string>
+    <string name="app_name_com.spotify.music">Spotify</string>
+    <string name="app_name_com.media.music.mp3.musicplayer">음악 플레이어</string>
+    <string name="app_name_com.ktmusic.geniemusic">지니뮤직</string>
+    <string name="app_name_com.naver.vibe">네이버 VIBE</string>
+    <string name="app_name_com.iloen.melon">멜론(Melon)</string>
+    <string name="app_name_com.soundcloud.android">SoundCloud</string>
+    <string name="app_name_musicplayer.musicapps.music.mp3player">음악 플레이어</string>
+    <string name="app_name_skplanet.musicmate">FLO – 플로</string>
+    <string name="app_name_com.neowiz.android.bugs">벅스 - Bugs</string>
+    <string name="app_name_com.kakao.music">카카오뮤직</string>
+    <string name="app_name_com.miui.player">Mi Music</string>
+</resources>

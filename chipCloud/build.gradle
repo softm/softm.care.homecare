@@ -1,0 +1,63 @@
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 33
+//    buildToolsVersion '25.0.2'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+    }
+    signingConfigs {
+        rdebug {
+//            storeFile file('D:\\workspace\\softm.navi.poweron\\softm.keystore.jks')
+            storeFile file('../softm.keystore.jks')
+            storePassword 'softm123'
+            keyAlias = 'softm'
+            keyPassword 'softm123'
+        }
+        debug {
+        }
+        release {
+//            storeFile file('D:\\workspace\\softm.navi.poweron\\softm.keystore.jks')
+            storeFile file('../softm.keystore.jks')
+            storePassword 'softm123'
+            keyAlias = 'softm'
+            keyPassword 'softm123'
+        }
+        dev {
+        }
+        local {
+        }
+        local_asset {
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        rdebug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+        }
+        dev {
+        }
+        local {
+        }
+        local_asset {
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+//    compile 'com.android.support:appcompat-v7:25.1.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+}

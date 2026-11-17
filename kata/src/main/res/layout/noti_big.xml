@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:layout_margin="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:id="@+id/lnOverlay"
+    android:background="@drawable/transparent">
+<!--    android:background="#00000000"    -->
+<!--    android:background="#1f3442"-->
+<!--    android:background="#F7CDB7"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:id="@+id/lnPermission"
+        android:visibility="visible"
+        android:layout_gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/tvPermission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_activate_permission"
+            android:textStyle="bold"
+            android:textColor="@color/primaryDark_orange"
+            android:textSize="11sp"
+            ></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="left"
+        >
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/btnHome"
+                android:layout_marginRight="10dp"
+                >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_weight="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_baseline_home_24"
+                    />
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:id="@+id/tvHome"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/btnCompany"
+                android:layout_marginRight="10dp"
+                >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_weight="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_baseline_corporate_fare_24"
+                    />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/company"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:id="@+id/tvCompany"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/btnStartNavi"
+                android:layout_marginRight="10dp"
+                >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_weight="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_baseline_launch_24"
+                    />
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start_navi"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:id="@+id/tvStartNavi"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/btnMain"
+                android:layout_marginRight="10dp"
+                android:minWidth="35dp"
+                >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_weight="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_baseline_layers_24"
+                    />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/overlay"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:id="@+id/tvMain"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/btnSearch"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_weight="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_baseline_manage_search_24"
+                    />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:id="@+id/tvSearch"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/btnSetting"
+                android:layout_marginRight="8dp"
+                >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_weight="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_baseline_settings_24"
+                    />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:id="@+id/tvSetting"
+                    />
+            </LinearLayout>
+
+    />
+            <!--            <ImageButton-->
+            <!--                android:id="@+id/btnSetting"-->
+            <!--                android:layout_width="30dp"-->
+            <!--                android:layout_height="35dp"-->
+            <!--                android:layout_gravity="center_vertical"-->
+            <!--                android:layout_marginRight="5dp"-->
+            <!--                android:background="@color/transparent"-->
+            <!--                android:paddingLeft="0dp"-->
+            <!--                android:paddingTop="3dp"-->
+            <!--                android:paddingRight="0dp"-->
+            <!--                android:paddingBottom="3dp"-->
+            <!--                android:scaleType="fitXY"-->
+            <!--                android:src="@drawable/ic_settings_18dp"-->
+            <!--                tools:visibility="gone" />-->
+
+        </LinearLayout>
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="test_Big"-->
+<!--            />-->
+<!--
+        <net.softm.data.kata.CustomSwitch
+            android:id="@+id/btnAppEnable"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:checked="true"
+            >
+        </net.softm.data.kata.CustomSwitch>
+-->
+
+        <LinearLayout
+            android:layout_weight="0.9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="8dp"
+            android:id="@+id/btnAppEnable"
+            >
+            <ImageView
+                android:layout_weight="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:checked="true"
+                android:enabled="true"
+                android:visibility="visible"
+                android:paddingRight="10dp"
+                android:src="@drawable/toggle_on"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0.9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="8dp"
+            android:id="@+id/btnAppDisable">
+            <ImageView
+                android:layout_weight="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:checked="true"
+                android:enabled="true"
+                android:visibility="visible"
+                android:paddingRight="10dp"
+                android:src="@drawable/toggle_off"
+                />
+        </LinearLayout>
+<!--
+        <Switch
+            android:id="@+id/btnAppEnable"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:enabled="true"
+            android:checked="true"
+            android:clickable="false"
+            android:visibility="visible"
+            />
+        <Switch
+            android:id="@+id/btnAppDisable"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:enabled="true"
+            android:checked="false"
+            android:clickable="false"
+            android:visibility="gone"
+            />
+-->
+    </LinearLayout>
+
+
+</LinearLayout>

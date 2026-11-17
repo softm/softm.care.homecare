@@ -1,0 +1,238 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="admob_app_id" tools:ignore="MissingTranslation">"ca-app-pub-4219853075548260~5019633555"</string>
+
+    <string name="banner_ad_unit_id_main_banner" tools:ignore="MissingTranslation">"ca-app-pub-4219853075548260/8296549496"</string>
+    <string name="banner_ad_unit_id_main_banner_for_test" tools:ignore="MissingTranslation">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="banner_ad_unit_id_waiting_banner" tools:ignore="MissingTranslation">"ca-app-pub-4219853075548260/2048217834"</string>
+    <string name="banner_ad_unit_id_waiting_banner_for_test" tools:ignore="MissingTranslation">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="banner_ad_unit_id_main_exit_banner" tools:ignore="MissingTranslation">"ca-app-pub-4219853075548260/9184471820"</string>
+    <string name="banner_ad_unit_id_main_exit_banner_for_test" tools:ignore="MissingTranslation">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="banner_ad_unit_id_interstitial" tools:ignore="MissingTranslation">ca-app-pub-4219853075548260/4556599123</string>
+    <string name="banner_ad_unit_id_interstitial_for_test" tools:ignore="MissingTranslation">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="banner_ad_unit_id_rewarded" tools:ignore="MissingTranslation">ca-app-pub-4219853075548260/4802373683</string>
+    <string name="banner_ad_unit_id_rewarded_for_test" tools:ignore="MissingTranslation">ca-app-pub-3940256099942544/5224354917</string>
+
+    <string name="banner_ad_unit_id_rewardedinterstitial" tools:ignore="MissingTranslation">ca-app-pub-4219853075548260/2367782033</string>
+    <string name="banner_ad_unit_id_rewardedinterstitial_for_test" tools:ignore="MissingTranslation">ca-app-pub-3940256099942544/5354046379</string>
+
+    <string name="app_name">Pray together</string>
+    <string name="app_name_short">Drive Auto</string>
+    <string name="app_description">Auto Run Navigation</string>
+    <string name="do_setting_home">Please set the house.</string>
+    <string name="do_setting_company">Please set company.</string>
+    <string name="do_setting_destination">Please set the destination.</string>
+
+    <string name="overlay_guide_1">Start the guide.</string>
+    <string name="overlay_guide_2">Shall we start guiding?</string>
+    <string name="overlay_guide_3">Guide starts in 10 seconds.</string>
+    <string name="overlay_guide_4">Cancel after 10 seconds.</string>
+    <string name="overlay_guide_5">Being guided... </string>
+
+    <string name="guide">Guide</string>
+    <string name="guide_donot_navi_hour">Do not run for 1 hour</string>
+    <string name="guide_start">Start guide</string>
+    <string name="guide_cancel">Cancel</string>
+    <string name="guide_close">Close</string>
+    <string name="guide_setting">Settings</string>
+    <string name="guide_gomain">Main</string>
+    <string name="auto_start">Autorun</string>
+
+    <string name="list_empty">There are no results.</string>
+    <string name="start_message"><![CDATA[T-map when startup is on <font color="#3498db">Autorun</font>.]]></string>
+    <string name="stop_message"><![CDATA[Auto-run Tmap <font color="#e74c3c">Stop</font>.]]></string>
+    <string name="no_store">Please register.</string>
+
+    <string name="action_grid">Grid Style</string>
+    <string name="action_linear">Linear Style</string>
+    <string name="title_noti_start">Start Guide</string>
+    <string name="title_noti_refence">Reset Guide</string>
+    <string name="title_noti_end">End Guide</string>
+    <string name="title_noti_runnig">Running</string>
+    <string name="title_noti_none">실시간 농산물 경매시세</string>
+
+    <string name="title_noti_runnig_title">T-map navigation-autorun</string>
+
+    <string name="close">Close</string>
+    <string name="home">Home</string>
+    <string name="home_reg"><![CDATA[<font color=\'#D84315\'>Home</font><font color=\'#D84315\' size="60">+</font>]]></string>
+    <string name="company">Co.</string>
+    <string name="company_reg"><![CDATA[<b><font color=\'#D84315\'>회사</font> <font color=\'#D84315\'><big><big>+</big></big></font></b>]]></string>
+    <string name="overlay">Icon</string>
+    <string name="search">Search</string>
+    <string name="destination">Fave</string>
+    <string name="favorite">Fave</string>
+    <string name="drive">Drive</string>
+    <string name="mode">Mode</string>
+    <string name="start_navi">Start</string>
+    <string name="tmap">Tmap</string>
+
+    <string name="com.crashlytics.useFirebaseAppId">true</string>
+
+    <string name="navi_to_home">Navi to Home</string>
+    <string name="navi_to_company">Navi to Company</string>
+    <string name="navi_to_start">Run Navi</string>
+    <string name="run_to_start">Run the app</string>
+    <string name="please_select_app">Please select an app.</string>
+<!--    <string name="msg_to_navigate">"%1$s".</string>-->
+    <string name="msg_to_navigate"><![CDATA[<u><b>"%1$s\"</b></u>]]></string>
+<!--    <string name="msg_to_navigate">Navigate to "%1$s".</string>-->
+
+    <string name="tmap_install_problem">There is a problem with T-map installation, so it cannot be called.</string>
+
+    <string name="navi_auto_run_goto_setting"><![CDATA[Change the \'Navi Auto Run\' setting.]]></string>
+
+    <string name="accessibility_description">Requires accessibility permission.</string>
+
+    <string name="msg_turn_on_the_bluetooth">Turn on Bluetooth.</string>
+    <string name="msg_bluetooth_enabled">Bluetooth is enabled.</string>
+
+    <string name="msg_confirm_do_data_network_connect">Mobile data may be turned off, or network access may be difficult, such as in sleep mode.\nPlease check the terminal settings.</string>
+    <string name="msg_confirm_turn_on_mobile_data">Would you like to turn on mobile data?</string>
+    <string name="msg_do_not_rerun_for_seconds">Do not rerun for %1$d seconds</string>
+    <string name="msg_activate_accessibility_permission"><![CDATA[<font color=\'#D84315\'>Turn on\"Accessibility Permission\"</font>. [<font color=\'#D84315\'>Touch</font>]]]></string>
+<!--    <string name="msg_activate_accessibility_permission"><![CDATA[<font color=\'#D84315\'>Turn off\"Accessibility Permission\"</font> -> <font color=\'#D84315\'>Turn it on</font>. [<font color=\'#D84315\'>Touch</font>]]]></string>-->
+    <string name="msg_activate_accessibility_permission2"><![CDATA[<font color=\'#000000\'><b>Accessibility service<b></font> is <font color=\'#000000\'>\"<b>stopped</b>\"</font>.,]]></string>
+    <string name="msg_music_play_setting"><![CDATA[<font color=\'#e74c3c\'><u><b>Autoplay music is turned off.</b></u></font>]]></string>
+    <string name="msg_activate_accessibility_permission3"><![CDATA[<font color=\'#000000\'><b>The \"start/stop\" routine</b></font> cannot be <font color=\'#000000\'>executed</font>.]]></string>
+    <string name="msg_activate_permission"><![CDATA[<font color=\'#D84315\'><b>Activate permission. [Touch]</font>.]]></string>
+    <string name="msg_activate_accessibility_permission4"><![CDATA[Activate accessibility services. [Touch]]]></string>
+
+    <string name="msg_activate_location_permission"><![CDATA[<font color=\'#D84315\'><b>Location permission</b></font> <font color=\'#D84315\'>Activate</font> [<font color=\'#D84315\'>Touch</font>]]]></string>
+    <string name="msg_activate_ignore_battery_permission"><![CDATA[<font color=\'#D84315\'><b>Battery saving permission</b></font> <font color=\'#D84315\'>Activate</font> [<font color=\'#D84315\'>Touch</font>]]]></string>
+    <string name="msg_activate_notification_access_permission"><![CDATA[<font color=\'#D84315\'><b>Activate the notification access permission</b></font>. [<font color=\'#D84315\'>Touch</font>]]]></string>
+
+    <string name="msg_tmap_is_running">Tmap is running.</string>
+    <string name="limit_work_goto">Not execute due to restrictions on commuting/leaving time</string>
+    <string name="msg_enabled">App actions have been enabled.</string>
+    <string name="msg_disabled">App actions have been disabled.</string>
+    <string name="msg_run_status_screen_on_not_running"><![CDATA["%1$s"-[Not running] : "Screen is on"]]></string>
+    <string name="msg_run_status_screen_off_not_running"><![CDATA["%1$s"-[Not running] : "Screen is off"]]></string>
+    <string name="msg_run_status_screen_unlock_not_running"><![CDATA["%1$s"-[Not Running] : "Screen Unlocked"]]></string>
+    <string name="msg_usage_period_extended"><![CDATA[Usage period: extended to %1$s]]></string>
+    <string name="msg_run_status_screen_lock_not_running"><![CDATA["%1$s"-[Not Running] : "Screen Locked"]]></string>
+
+    <string name="msg_canceled"><![CDATA[Cancelled]]></string>
+
+    <string name="msg_post_notifications"><![CDATA[Enable the Notifications runtime permission.]]></string>
+    <string name="msg_post_notifications_complete"><![CDATA[Notification runtime permission has been enabled.]]></string>
+
+    <string name="msg_adview_support_the_developers"><![CDATA[Support the developers]]></string>
+    <string name="msg_adview_watching_ads"><![CDATA[Watching Advertisements]]></string>
+    <string name="msg_adview_support_the_developers2"><![CDATA[Support the Developers]]></string>
+
+    <string name="msg_adview_user_earned_reward"><![CDATA[Reward paid.]]></string>
+    <string name="msg_adview_thankyou1"><![CDATA[Thank you for watching the ad.^^~ :)]]></string>
+    <string name="msg_adview_thankyou2"><![CDATA[Please support us.]]></string>
+    <string name="msg_adview_thankyou3"><![CDATA[Thank you.]]></string>
+    <string name="msg_free_lincense"><![CDATA[Activate your free benefits.]]></string>
+    <string name="msg_view_benefits"><![CDATA[View Benefits]]></string>
+    <string name="msg_get_rewarded"><![CDATA[Get Rewared]]></string>
+
+    <string name="msg_adview_if"><![CDATA[If you watch the ad]]></string>
+    <string name="msg_adview_is"><![CDATA[To Ad view]]></string>
+    <string name="msg_adview_recuce_waittime"><![CDATA[Waiting time changed from "%1$s" seconds → "%2$s" seconds]]></string>
+    <string name="msg_adview_license_expired"><![CDATA[Your subscription has expired.]]></string>
+    <string name="msg_adview_license_extend"><![CDATA[You can extend your subscription by viewing ads.]]></string>
+
+    <string name="msg_go_music_player"><![CDATA[Start playing in the player.\nFollowing actions will play automatically.]]></string>
+    <string name="msg_go_music_player_notice"><![CDATA[You must start playback in the player once.\nIt will play automatically on subsequent actions.]]></string>
+
+    <string name="msg_license_user"><![CDATA[You are the license user.]]></string>
+    <string name="msg_add_favorite_current_location"><![CDATA[Save current location to favorites?]]></string>
+    <string name="msg_add_favorite_current_location_added"><![CDATA[Favorite saved.]]></string>
+    <string name="msg_remove_recent_poi"><![CDATA[\Do you want to delete recent history?]]></string>
+    <string name="msg_remove_favorite_poi"><![CDATA[\Do you want to delete favorites?]]></string>
+
+    <string name="msg_review_thankyou1"><![CDATA[Thank you for the review.^^~ :)]]></string>
+
+    <string name="msg_disabled_noti_icon"><![CDATA[For normal app use, "Notification Bar" must be enabled,\n "Accessibility" must be allowed.]]></string>
+    <string name="force_stop_navi">Close the navigation app.</string>
+    <string name="force_stop_app">Close the app.</string>
+    <string name="select_app">Choose an app.</string>
+    <string name="loading_applist">Retrieving app list...\nPlease wait.</string>
+    <string name="loading_list">Retrieving list...\nPlease wait.</string>
+    <string name="no_apps_running">There are no apps running.</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
+
+    <string name="app_exit_cancel">Cancel</string>
+    <string name="app_exit">Exit</string>
+
+    <string name="loading_ad">Loading Ad</string>
+    <string name="license_stop">License Stop</string>
+    <string name="expiration">Expiration</string>
+
+    <string name="msg_app_is_running">"%1$s" App is running</string>
+
+    <string name="msg_app_latest_update">"%1$s" app has the latest version.\n Please update it :)</string>
+    <string name="button.app_latest_update.later">Later</string>
+    <string name="button.app_latest_update.now">Update now</string>
+    <string name="msg_app_latest_update_later">Postponed update</string>
+
+    <string name="msg_no_app_selected">No app selected.</string>
+    <string name="stops_touch">It stops when you touch the screen.</string>
+    <string name="sec">Sec</string>
+    <string name="min">min</string>
+    <string name="stop_service">End of execution waiting</string>
+    <string name="run">Run</string>
+    <string name="wait">Wait</string>
+    <string name="run_wait">Waiting for execution</string>
+    <string name="run_speed_hide">Hide</string>
+
+    <string name="label.on">On</string>
+    <string name="label.off">Off</string>
+    <string name="label.bluetooth">Bluetooth</string>
+    <string name="label.wifi">Wifi</string>
+    <string name="label.tethering">tethering</string>
+    <string name="label.airplane_mode">Airplane Mode</string>
+    <string name="label.mobile_data">Mobile Data</string>
+    <string name="label.screen_on">Screen on</string>
+    <string name="label.completed_lock">Lock(Completed)</string>
+    <string name="label.lock">Lock</string>
+    <string name="label.unlock">Unlock</string>
+    <string name="label.play_music">Play music</string>
+    <string name="label.home_screen">Home Screen</string>
+    <string name="label.power_off">Power off</string>
+    <string name="label.unknown">Unknown</string>
+
+    <string name="msg.startstop_onoff">"%1$s" "%2$s"</string>
+    <string name="msg.inapp_update">An update is required to use the app.</string>
+    <string name="msg.exec_stopped">Execution stopped.</string>
+    <string name="msg.tmap_not_install">T-map is not installed.</string>
+    <string name="msg.app_not_install">"%1$s" is not installed.</string>
+    <string name="msg.not_reg_home">Please register your home address.</string>
+    <string name="msg.not_reg_compmay">Please register your company address.</string>
+
+    <string name="msg.uncaught_exception"><![CDATA[An error occurred but has been resolved.\n\nIf the app does not function properly,\nplease turn the "%1$s" accessibility service \'off\' and \'on\'.]]></string>
+    <string name="msg.uncaught_exception1"><![CDATA[The app was terminated abnormally.\n\nIf the app does not operate properly,\n turn the "%1$s" accessibility service \'off\' and \'on\'.]]></string>
+    <string name="msg.limit_lower_version"><![CDATA[The feature "%1$s" is not available on your current device.]]></string>
+
+    <string name="msg_nottethering_mobiledata_notsupport">This device is not capable of tethering as mobile data is not available.</string>
+    <string name="msg.run_only_onoff">Only On/Off routines run.</string>
+
+    <string name="setting">Settings</string>
+    <string name="finish">Finish</string>
+    <string name="button.label.on">Trun On</string>
+
+<!--    <string name="com.crashlytics.android.build_id">1</string>-->
+    
+    <string name="hold_time">hold</string>
+    <string name="hold_0min">none</string>
+    <string name="hold_1min">1min</string>
+    <string name="hold_5min">5min</string>
+    <string name="hold_10min">10min</string>
+    <string name="hold_30min">30min</string>
+    <string name="hold_1hour">1hrs</string>
+    <string name="hold_2hour">2hrs</string>
+
+    <string name="msg_app_updated">The app has been updated.</string>
+    <string name="msg_permission_background_location">Set location access permission to [Always Allow].</string>
+
+    <string name="app_boot_start">T-map automatic execution has been executed.</string>
+
+    <string name="com.crashlytics.android.build_id">1</string>
+</resources>

@@ -1,0 +1,20 @@
+Google Play 등록 진행 상태 (2026-10-07)
+패키지: net.softm.care.homecare
+개발자: softmnet / 6307122931125176054
+앱 ID: 4973004237528988233
+기존 공개 버전: 1.0.0 (2), 2026-10-06 출시 확인.
+업데이트: 1.0.1 (3), targetSdk 36, minSdk 24.
+변경: 최종 파란색 앱 아이콘과 스토어 512px 아이콘 동기화, 아이콘 AI 편집 선언.
+Play 자동 보호의 minSdk 24 요구에 따라 신규 번들은 Android 7 이상.
+Android 6 기기는 기존 버전 2를 유지하도록 포함하여 지원 기기 감소 0 확인.
+검증: lintRelease, assembleRelease, bundleRelease 성공. 난독화 미사용에 따른 매핑 파일 경고만 존재.
+프로덕션 100% 전체 출시 및 한국어 스토어 아이콘 변경 2건 제출 요청 접수.
+현재: 게시 개요의 검토 중인 변경사항에 표시되며 자동 사전 검사 중. 통과 후 Google 심사로 전송.
+관리형 게시 꺼짐: 승인 후 자동 공개. 아직 새 버전 공개 완료로 확인하지 않음.
+콘솔: https://play.google.com/console/u/0/developers/6307122931125176054/app/4973004237528988233/publishing
+증거: /tmp/homecare-play-20261007-submitted.png
+
+최신 확인 (2026-10-12):
+- 프로덕션 1.0.5 (versionCode 7), 출시명 `1.0.5 autorunnavi AdMob`이 활성 상태로 공개됨.
+- 돌봄한눈형 하단 네이티브 광고가 적용된 공개 버전임.
+- 추가 제출 불필요.

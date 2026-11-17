@@ -1,0 +1,17 @@
+.gradle/
+.idea/
+**/build/
+local.properties
+.DS_Store
+*.jks
+*.keystore
+google-services.json
+*.iml
+
+/signing.properties
+
+# Local service credentials and generated release artifacts
+**/fabric.properties
+**/.vscode/
+**/release/*.aab
+.serena/

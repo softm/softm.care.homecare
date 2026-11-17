@@ -1,0 +1,1142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ln_test2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="3dp">
+
+            <Button
+                android:id="@+id/btnTestPurchases02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:text="구독?"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginRight="5dp"
+                />
+            <Button
+                android:id="@+id/btnTestPurchases03"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:text="결제사용자정보 갱신"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginRight="5dp"
+                />
+            <Button
+                android:id="@+id/btnTestPurchases04"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:text="구매"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginRight="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="3dp">
+
+            <Button
+                android:id="@+id/btnTestPurchase1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+                android:text="기부.결제X"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginRight="5dp"
+                />
+            <Button
+                android:id="@+id/btnTestPurchase2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:text="구독.결제"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginRight="5dp"
+                />
+            <Button
+                android:id="@+id/btnTestPurchase3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:text="평생.결제"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginRight="5dp"
+                />
+            <Button
+                android:id="@+id/btnTestPurchasesSubsList"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+                android:text="구독.정보"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginRight="5dp"
+                />
+            <Button
+                android:id="@+id/btnTestPurchasesInAppList"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:text="평생.정보"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginRight="5dp"
+                />
+            <Button
+                android:id="@+id/btnTestPurchases01"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:text="소비"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginRight="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="3dp">
+            <Button
+                android:id="@+id/btnTestBillingConnect"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:text="결제.연결"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginRight="5dp"
+                />
+            <Button
+                android:id="@+id/btnTestBillingQuery1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:text="기부.정보"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginRight="5dp"
+                />
+            <Button
+                android:id="@+id/btnTestBillingQuery2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:text="구독.정보"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginRight="5dp"
+                />
+            <Button
+                android:id="@+id/btnTestBillingQuery3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:text="평생.정보"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginRight="5dp"
+                />
+            <Button
+                android:id="@+id/btnTestQuerySkuDetails"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:text="Old.sku.query"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginRight="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="3dp">
+            <Button
+                android:id="@+id/btnTestMode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:text="Test.ON"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginRight="5dp"
+                />
+            <Button
+                android:id="@+id/btnDriveTest"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:text="안전운행"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                />
+            <Button
+                android:id="@+id/btnGetTestVar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+                android:text="getError"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginLeft="5dp"
+                />
+            <Button
+                android:id="@+id/btnInitPaidError"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:text="Paid.초기화"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginLeft="5dp"
+                />
+            <Button
+                android:id="@+id/btnInit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:text="초기화"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginLeft="5dp"
+                />
+            <Button
+                android:id="@+id/btnTimerStart"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:text="Timer.Start"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginLeft="5dp"
+                />
+
+            <Button
+                android:id="@+id/btnTimerCancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:text="Timer.Cancel"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tvTimerTick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:enabled="true"
+                android:gravity="center"
+                android:maxWidth="55dp"
+                android:minHeight="45dp"
+                android:text="-"
+                android:textColor="#000000"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="3dp">
+
+            <Button
+                android:id="@+id/btnTest6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+                android:maxWidth="85dp"
+                android:maxHeight="40dp"
+                android:text="광고보기"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+            <Button
+                android:id="@+id/btnTest7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+                android:maxWidth="85dp"
+                android:maxHeight="40dp"
+                android:text="광고보기.초기화"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+            <Button
+                android:id="@+id/btnTest8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+                android:maxWidth="85dp"
+                android:maxHeight="40dp"
+                android:text="만료일"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+            <Button
+                android:id="@+id/btnIsAdLicense"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+                android:maxWidth="85dp"
+                android:maxHeight="40dp"
+                android:text="isAdLicense"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+            <Button
+                android:id="@+id/btnTest2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+                android:maxWidth="85dp"
+                android:maxHeight="40dp"
+                android:text="광고.남은시간"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="3dp">
+
+            <Button
+                android:id="@+id/btnTestAppUpdate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+                android:maxWidth="85dp"
+                android:maxHeight="40dp"
+                android:text="AppUpdate"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnTestAppUpdateReset"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+                android:maxWidth="85dp"
+                android:maxHeight="40dp"
+                android:text="Reset"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+
+            <Button
+                android:id="@+id/btnTest3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+                android:maxWidth="85dp"
+                android:maxHeight="40dp"
+                android:text="Crash"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                />
+            <Button
+                android:id="@+id/btnTest"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:text="perm"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnTestSpanNoti"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:text="Span.Noti"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginRight="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="3dp">
+
+            <Button
+                android:id="@+id/btnReviewTest"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:text="리뷰.작성.호출"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnReviewTestReset"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+                android:maxWidth="85dp"
+                android:maxHeight="40dp"
+                android:text="리뷰.초기화"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+            <Button
+                android:id="@+id/btnReviewTest3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+                android:maxWidth="85dp"
+                android:maxHeight="40dp"
+                android:text="리뷰.가능?"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                />
+
+
+            <Button
+                android:id="@+id/btnReviewTest4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:layout_marginLeft="5dp"
+                android:enabled="true"
+                android:gravity="center"
+                android:maxWidth="85dp"
+                android:maxHeight="40dp"
+                android:text="리뷰.남은시간"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="3dp">
+
+            <Button
+                android:id="@+id/btnAlarm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:layout_marginLeft="5dp"
+                android:enabled="true"
+                android:gravity="center"
+                android:maxWidth="85dp"
+                android:maxHeight="40dp"
+                android:text="alarm"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+                <Button
+                android:id="@+id/btnTest4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:layout_marginLeft="5dp"
+                android:enabled="true"
+                android:gravity="center"
+                android:maxWidth="85dp"
+                android:maxHeight="40dp"
+                android:text="forceStop"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+
+            <Button
+                android:id="@+id/btnNoti"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+                android:maxWidth="85dp"
+                android:maxHeight="40dp"
+                android:text="Noti"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                />
+            <Button
+                android:id="@+id/btnWaitOverlay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:text="WaitO"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="3dp">
+
+            <Button
+                android:id="@+id/btnWorkerTestAdd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:text="서비스체커.추가"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnWorkerTestGet"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+                android:maxWidth="85dp"
+                android:maxHeight="40dp"
+                android:text="상태"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+            <Button
+                android:id="@+id/btnWorkerTestGetAll"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_default"
+                android:enabled="true"
+                android:gravity="center"
+                android:maxWidth="85dp"
+                android:maxHeight="40dp"
+                android:text="모두"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                />
+
+
+            <Button
+                android:id="@+id/btnWorkerTestCancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:layout_marginLeft="5dp"
+                android:enabled="true"
+                android:gravity="center"
+                android:maxWidth="85dp"
+                android:maxHeight="40dp"
+                android:text="취소"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+            <Button
+                android:id="@+id/btnWorkerTestCancelAll"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:layout_marginLeft="1dp"
+                android:enabled="true"
+                android:gravity="center"
+                android:maxWidth="85dp"
+                android:maxHeight="40dp"
+                android:text="취소.All"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnWorkerTestPruneWork"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_default"
+                android:layout_marginLeft="1dp"
+                android:enabled="true"
+                android:gravity="center"
+                android:maxWidth="85dp"
+                android:maxHeight="40dp"
+                android:text="완전.취소.All"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@color/White"
+            tools:ignore="MissingConstraints"
+            android:visibility="visible"
+            >
+            <EditText
+                android:id="@+id/editTextNumber"
+                android:layout_width="69dp"
+                android:layout_height="43dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="text"
+                android:text="100"
+                tools:ignore="MissingConstraints"
+                />
+
+            <EditText
+                android:id="@+id/editTextNumber1"
+                android:layout_width="69dp"
+                android:layout_height="43dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="text"
+                android:text="100"
+                tools:ignore="MissingConstraints"
+                />
+
+            <EditText
+                android:id="@+id/editTextNumber2"
+                android:layout_width="69dp"
+                android:layout_height="43dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="text"
+                android:text="100"
+                tools:ignore="MissingConstraints"
+                />
+
+            <EditText
+                android:id="@+id/editTextNumber3"
+                android:layout_width="69dp"
+                android:layout_height="43dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="text"
+                android:text="100"
+                tools:ignore="MissingConstraints"
+                />
+
+            <EditText
+                android:id="@+id/editTextNumber4"
+                android:layout_width="69dp"
+                android:layout_height="43dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="text"
+                android:text="100"
+                tools:ignore="MissingConstraints"
+                />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <net.softm.data.kata.web.BaseWebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="28dp">
+
+    </net.softm.data.kata.web.BaseWebView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

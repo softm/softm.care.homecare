@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--
+    <string name="app_name">미동소방학원</string>
+-->
+    <string name="alert_str">알림</string>
+    <string name="alert_yes_str">예</string>
+    <string name="alert_no_str">아니오</string>
+    <string name="alert_confirm_str">확인</string>
+    <string name="alert_cancel_str">취소</string>
+    <string name="alert_negative_str">아니오</string>
+
+    <string name="proc_gid">tmp</string>
+
+    <string name="label_all">전체</string>
+    <string name="label_spn_non_select">-선택-</string>
+    <string name="label_spn_non_select2">선택</string>
+
+    <!-- 공통 -->
+    <string name="notice">알림</string>
+    <string name="confirm">확인</string>
+    <string name="success">성공</string>
+    <string name="cancel">취소</string>
+    <string name="delete">삭제</string>
+
+    <!-- 공통 -->
+    <string name="ssl_cert_untrusted_msg">이 사이트의 보안 인증서는 신뢰할 수 없습니다.\n앱을 종료합니다.\n</string>
+    <string name="ssl_invalid_update_01">앱을 정상적으로 사용하시기 위해서는 Play스토어에서 [Android System WebView]와 [Chrome 브라우저-Google]을 최신버전으로 업데이트 하여 주시기 바랍니다.\n단 안드로이드 OS 7.0 (누가) 이상인 스마트폰 고객의 경우는 아래의 순서로 업테이트 하여 주시기바랍니다.\n1. 설정 > 일반 > 앱 > 크롬(Chrome) > 사용중지\n2. 플레이스토어 > 안드로이드 웹뷰 > 업데이트\n3. 설정 > 일반 > 앱 > 크롬(Chrome) > 사용</string>
+    <string name="ssl_invalid_update_02">Android System WebView의 최신버전이 필요합니다. 업데이트 이후 이용하시기 바랍니다. 아래 확인버튼을 누르면 업데이트 페이지로 이동합니다.</string>
+    <string name="common_back_close">뒤로가기를 다시 누르시면 앱이 종료됩니다.</string>
+    <string name="common_back_popup_close">뒤로가기를 다시 누르시면 팝업이 종료됩니다.</string>
+    <string name="common_go">바로가기</string>
+    <string name="common_noti">앱접근권한 안내</string>
+    <string name="common_ok">확인</string>
+    <string name="common_change">변경</string>
+    <string name="common_close">닫기</string>
+    <string name="common_cancel">취소</string>
+    <string name="common_stop">그만보기</string>
+    <string name="common_notice">알림</string>
+    <string name="common_confirm">확인</string>
+    <string name="common_success">성공</string>
+    <string name="common_delete">삭제</string>
+    <string name="common_error">에러</string>
+    <string name="common_no_msg">내용없음</string>
+    <string name="common_next">다음</string>
+    <string name="common_send">전송</string>
+    <string name="common_finish">종료</string>
+    <string name="common_setting">설정</string>
+    <string name="common_select_all">전체선택</string>
+    <string name="error_server_connect_fail">서버 접속이 원활하지 않습니다.</string>
+    <string name="error_permission_for_location">위치 권한이 거부되었습니다.\n설정(앱 정보)에서 권한을 허용해 주세요.</string>
+    <string name="error_permission_for_post_notifications">알림 권한이 거부되었습니다.\n설정(앱 정보)에서 권한을 허용해 주세요.</string>
+</resources>

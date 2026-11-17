@@ -1,0 +1,362 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'io.fabric'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'kotlin-android'
+//apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-parcelize'
+android {
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+        unitTests.all {
+            jvmArgs '-Djdk.attach.allowAttachSelf=true'
+        }
+    }
+
+    aaptOptions {
+        ignoreAssetsPattern "ftp-sync.json:!.idea:!.vscode"
+    }
+    signingConfigs {
+        release {
+//            storeFile file('D:\\workspace\\softm.navi.poweron\\softm.keystore.jks')
+            storeFile file('/Users/softm/workspace/softm.navi.poweron.new/softm.keystore.jks')
+            storePassword 'softm123'
+            keyAlias = 'softm'
+            keyPassword 'softm123'
+        }
+        rdebug {
+//            storeFile file('D:\\workspace\\softm.navi.poweron\\softm.keystore.jks')
+            storeFile file('/Users/softm/workspace/softm.navi.poweron.new/softm.keystore.jks')
+            storePassword 'softm123'
+            keyAlias = 'softm'
+            keyPassword 'softm123'
+        }
+        debug {
+        }
+        dev {
+        }
+        local {
+        }
+        local_asset {
+        }
+    }
+
+    compileSdkVersion 34
+    buildToolsVersion "30.0.0"
+
+    tasks.withType(JavaCompile).configureEach{
+        options.fork = true
+        options.forkOptions.jvmArgs +=[
+                '--add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED',
+                '--add-exports=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED',
+                '--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED']
+    }
+    defaultConfig {
+        applicationId "net.softm.data.kata"
+        minSdkVersion 23 // minSdkVersion 19 --> 23 : com.kakao.sdk:v2-navi:2.20.3 지원을 위해
+        targetSdkVersion 35
+// RELEASE 25, 1.0.2.000 : 2023.10.07
+// RELEASE 4, 1.0.3.000 : 2025.05.28
+// RELEASE 5, 1.0.3.000 : 2025.06.01
+// RELEASE 6, 1.0.3.000 : 2025.06.04
+// RELEASE 7, 1.0.4.000 : 2025.06.04
+// RELEASE 8, 1.0.5.000 : 2025.06.07
+// RELEASE 9, 1.0.6.000 : 2025.06.07
+        versionCode 3
+        versionName "1.0.0.002" // 9
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        setProperty("archivesBaseName", "softm.data.kata-$versionName-$versionCode")
+        multiDexEnabled true
+
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            debuggable false
+        }
+        rdebug { // dev relase
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            shrinkResources false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+// speed optimize
+            splits.abi.enable = false
+            splits.density.enable = false
+//            resConfigs('en','xhdpi')
+            aaptOptions.cruncherEnabled = false
+
+//            // crashlytics 빌드 ID 업데이트 막기
+//            ext.alwaysUpdateBuildId = false
+//            // crashlytics 실행하지 않음
+//            manifestPlaceholders = [enableCrashReporting:"false"]
+        }
+
+        debug {
+//            resValue "string","app_name", "실시간 농산물 경매시세_DEV"
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+// speed optimize
+/*            splits.abi.enable = false
+            splits.density.enable = false
+//            resConfigs('en','xhdpi')
+            aaptOptions.cruncherEnabled = false
+
+            // crashlytics 빌드 ID 업데이트 막기
+            ext.alwaysUpdateBuildId = false*/
+/*
+            // crashlytics 실행하지 않음
+            manifestPlaceholders = [enableCrashReporting:"false"]
+*/
+ //
+//            // crashlytics 플러그인을 사용하지 않음
+//            ext.enableCrashlytics = false
+//
+//            // crashlytics 빌드 ID 업데이트 막기
+//            ext.alwaysUpdateBuildId = false
+
+        }
+
+        dev {
+//            resValue "string","app_name", "실시간 농산물 경매시세_DEV"
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            shrinkResources false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+// speed optimize
+            splits.abi.enable = false
+            splits.density.enable = false
+//            resConfigs('en','xhdpi')
+            aaptOptions.cruncherEnabled = false
+
+            // crashlytics 빌드 ID 업데이트 막기
+            ext.alwaysUpdateBuildId = false
+/*
+            // crashlytics 실행하지 않음
+            manifestPlaceholders = [enableCrashReporting:"false"]
+*/
+        }
+        local {
+//            resValue "string","app_name", "실시간 농산물 경매시세_DEV"
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            shrinkResources false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+// speed optimize
+            splits.abi.enable = false
+            splits.density.enable = false
+//            resConfigs('en','xhdpi')
+            aaptOptions.cruncherEnabled = false
+
+            // crashlytics 빌드 ID 업데이트 막기
+            ext.alwaysUpdateBuildId = false
+/*
+            // crashlytics 실행하지 않음
+            manifestPlaceholders = [enableCrashReporting:"false"]
+*/
+        }
+        local_asset {
+            signingConfig signingConfigs.debug
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+        }
+
+    }
+
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+        languageVersion = "1.8"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar","*.aar"])
+    implementation project(path: ':dot-progress-bar')
+    implementation project(path: ':softmcommon')
+    implementation project(path: ':chipCloud')
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.test.ext:junit-ktx:1.2.1'
+//    implementation 'com.google.ar:core:1.30.0'
+
+    testImplementation 'junit:junit:4.12'
+    testImplementation project(':kata')
+//    testImplementation 'org mockito mockito core:4.8.1'
+    testImplementation 'org.mockito:mockito-core:3.+'
+    testImplementation 'org.mockito:mockito-inline:2.13.0'
+    testImplementation "androidx.test:core:1.6.1"
+    // Kotlin extensions for androidx.test.core
+    testImplementation "androidx.test:core-ktx:1.6.1"
+
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    androidTestImplementation 'androidx.test:rules:1.5.0'
+
+    // Espresso dependencies
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-intents:3.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-accessibility:3.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-web:3.1.0'
+    androidTestImplementation 'androidx.test.espresso.idling:idling-concurrent:3.1.0'
+
+    // The following Espresso dependency can be either "implementation"
+    // or "androidTestImplementation", depending on whether you want the
+    // dependency to appear on your APK's compile classpath or the test APK
+    // classpath.
+    androidTestImplementation 'androidx.test.espresso:espresso-idling-resource:3.1.0'
+
+
+//    testImplementation "org.robolectric:robolectric:4.2.1"
+    testImplementation "org.robolectric:robolectric:4.14" // 버전 호환 안됨 실행오류.
+//    implementation "androidx.webkit:webkit:1.2.0"
+
+    // JSON Parsing
+    implementation 'com.google.code.gson:gson:2.7'
+    // http logging
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+
+    // Butter knife
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+
+    implementation 'com.google.android.gms:play-services-base:18.2.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation "com.google.android.gms:play-services-location:17.0.0"
+
+    implementation('com.crashlytics.sdk.android:crashlytics:2.10.1@aar') {
+        transitive = true;
+    }
+//    implementation 'com.google.firebase:firebase-analytics:17.2.2'
+
+
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:32.1.0')
+
+    // Add the dependencies for the Crashlytics and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-analytics'
+    
+    implementation 'com.google.android.play:asset-delivery:2.2.2'
+    implementation 'com.google.android.play:feature-delivery:2.1.0'
+    implementation 'com.google.android.play:review:2.0.2'
+    implementation 'com.google.android.play:app-update:2.1.0'
+
+    implementation 'androidx.work:work-runtime:2.7.1'
+//    compile 'com.android.support:multidex:1.0.0'
+    def multidex_version = "2.0.1"
+    implementation "androidx.multidex:multidex:$multidex_version"
+
+    implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+    implementation "pl.bclogic:pulsator4droid:1.0.3"
+
+//    implementation 'com.kakao.maps.open:android:2.11.9'
+//    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    implementation "com.kakao.sdk:v2-navi:2.20.3" // 카카오내비 API 모듈
+//    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3"
+
+    implementation("com.google.android.gms:play-services-ads:23.3.0")
+
+    implementation 'com.google.guava:guava:30.1-jre'
+
+    implementation 'com.google.android.gms:play-services-auth:20.4.0'
+    // Firebase
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+    implementation 'com.google.firebase:firebase-auth:16.0.4'
+//    implementation 'com.android.billingclient:billing:6.0.1'
+    def billing_version = "8.0.0"
+    implementation "com.android.billingclient:billing:$billing_version"
+
+    implementation 'androidx.activity:activity-ktx:1.9.3'  // ActivityResultContracts 사용을 위한 의존성
+
+    implementation("com.google.firebase:firebase-firestore:24.9.1")
+
+    implementation 'com.android.installreferrer:installreferrer:2.2'
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            output.processManifest.doLast {
+//                def outputDir = task.getManifestOutputDirectory()
+//                File outputDirectory
+//                if (outputDir instanceof File) {
+//                    outputDirectory = outputDir
+//                } else {
+//                    outputDirectory = outputDir.get().asFile
+//                }
+//                File manifestFile = file("$outputDirectory/AndroidManifest.xml")
+                File manifestFile = file("/Users/softm/workspace/softm.data.kata/kata/src/main/AndroidManifest.xml")
+                println("manifestFile : " + manifestFile)
+                if (manifestFile.exists()) {
+                    String manifestContent = manifestFile.getText('UTF-8')
+                    manifestContent = manifestContent.replaceAll("android:glEsVersion=\"[0-9]+\"", "")
+                    manifestFile.write(manifestContent, 'UTF-8')
+                }
+            }
+        }
+    }
+//
+//    android.applicationVariants.all { variant ->
+//        variant.outputs.each { output ->
+//            def processManifest = output.getProcessManifestProvider().get()
+//            processManifest.doLast { task ->
+//                def outputDir = task.getManifestOutputDirectory()
+//                File outputDirectory
+//                if (outputDir instanceof File) {
+//                    outputDirectory = outputDir
+//                } else {
+//                    outputDirectory = outputDir.get().asFile
+//                }
+//                File manifestOutFile = file("$outputDirectory/AndroidManifest.xml")
+//
+//                if (manifestOutFile.exists() && manifestOutFile.canRead() && manifestOutFile.canWrite()) {
+//                    def newManifest = manifestOutFile.getText().replace("@string/app_name", "Broccoli")
+//                    manifestOutFile.write(newManifest, 'UTF-8')
+//                }
+//            }
+//        }
+//    }
+}
+
+

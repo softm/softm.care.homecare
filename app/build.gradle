@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+def releaseSigning = new Properties()
+def signingFile = rootProject.file('signing.properties')
+if (signingFile.exists()) {
+    signingFile.withInputStream { releaseSigning.load(it) }
+}
+android {
+    namespace 'net.softm.care.homecare'
+    compileSdk 36
+    defaultConfig {
+        applicationId 'net.softm.care.homecare'
+        minSdk 24 // SOFTM-PLAY-PROTECTION 날짜:20261007 : 활성화된 Play 자동 보호의 최소 SDK 요구 충족
+        targetSdk 36
+        versionCode 7 // SOFTM-ADMOB-RELEASE 날짜:20261012 : autorunnavi 광고 단위로 교체한 Play 재업로드 빌드를 구분
+        versionName '1.0.5' // SOFTM-ADMOB-RELEASE 날짜:20261012 : 동일 계정 광고 ID를 적용한 공개 배포 버전을 식별
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+    signingConfigs {
+        release {
+            if (signingFile.exists()) {
+                storeFile rootProject.file(releaseSigning.getProperty('storeFile'))
+                storePassword releaseSigning.getProperty('storePassword')
+                keyAlias releaseSigning.getProperty('keyAlias')
+                keyPassword releaseSigning.getProperty('keyPassword')
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.github.softm:hannun-in-app-update-android:1.0.0'
+    implementation 'com.google.android.gms:play-services-ads:23.6.0' // SOFTM-ADMOB-NATIVE 날짜:20261010 : 현재 Gradle 린트 호환 범위에서 앱 하단 네이티브 광고 표시
+}
+
+// 서명 설정 누락 시 미서명 산출물을 배포하지 않도록 중단합니다.
+tasks.configureEach { task ->
+    if (task.name == 'validateSigningRelease') {
+        task.doFirst {
+            if (!signingFile.exists()) throw new GradleException('signing.properties 파일이 필요합니다.')
+            ['storeFile', 'storePassword', 'keyAlias', 'keyPassword'].each { key ->
+                if (!releaseSigning.getProperty(key)) throw new GradleException('서명 설정 누락: ' + key)
+            }
+        }
+    }
+}

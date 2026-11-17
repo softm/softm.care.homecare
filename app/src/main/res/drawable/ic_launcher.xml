@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SOFTM-BRAND-ICON START 날짜:20261007 : 웹과 설치 앱의 대표 표식을 동일하게 유지 -->
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/dolbom_brand"
+    android:gravity="fill"
+    android:filter="true" />
+<!-- SOFTM-BRAND-ICON END -->

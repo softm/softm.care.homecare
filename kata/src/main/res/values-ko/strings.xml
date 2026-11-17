@@ -1,0 +1,226 @@
+<resources>
+<!--<string name="app_name">실시간 농산물 경매시세</string>-->
+    <string name="app_name">실시간 농산물 경매시세</string>
+    <string name="app_description">실시간 농산물 경매시세</string>
+
+    <string name="do_setting_home">집을 설정해주세요.</string>
+    <string name="do_setting_company">회사를 설정해주세요.</string>
+    <string name="do_setting_destination">목적지를 설정해주세요.</string>
+
+    <string name="overlay_guide_1">안내를 시작합니다.</string>
+    <string name="overlay_guide_2">안내를 시작할까요?</string>
+    <string name="overlay_guide_3">10초후 안내가 시작 됩니다.</string>
+    <string name="overlay_guide_4">10초후 취소 됩니다.</string>
+    <string name="overlay_guide_5">안내중 ...  </string>
+
+    <string name="guide">안내</string>
+    <string name="guide_donot_navi_hour">1시간동안 실행안함</string>
+    <string name="guide_start">안내시작</string>
+    <string name="guide_cancel">취소</string>
+    <string name="guide_close">닫기</string>
+    <string name="guide_setting">설정</string>
+    <string name="guide_gomain">메인</string>
+    <string name="auto_start">자동실행</string>
+
+    <string name="list_empty">결과가 없습니다.</string>
+    <string name="start_message"><![CDATA[시동 켜면 티맵 <font color="#3498db">자동실행</font>.]]></string>
+    <string name="stop_message"><![CDATA[실시간 농산물 경매시세 <font color="#e74c3c">중지</font>.]]></string>
+    <string name="no_store">등록해주세요.</string>
+
+    <string name="action_grid">Grid Style</string>
+    <string name="action_linear">Linear Style</string>
+    <string name="title_noti_start">안내시작</string>
+    <string name="title_noti_refence">안내재설정</string>
+    <string name="title_noti_end">안내종료</string>
+    <string name="title_noti_runnig">실행중</string>
+
+    <string name="title_noti_runnig_title">티맵내비-자동실행</string>
+
+    <string name="close">닫기</string>
+    <string name="home">집</string>
+    <string name="home_reg"><![CDATA[<b><font color=\'#D84315\'>집</font> <font color=\'#D84315\'><big><big>+</big></big></font></b>]]></string>
+    <string name="company">회사</string>
+    <string name="company_reg"><![CDATA[<b><font color=\'#036b0a\'>회사</font> <font color=\'#036b0a\'><big><big>+</big></big></font></b>]]></string>
+    <string name="overlay">아이콘</string>
+    <string name="search">검색</string>
+    <string name="destination">목적지</string>
+    <string name="favorite">즐겨찾기</string>
+    <string name="drive">운전</string>
+    <string name="mode">모드</string>
+    <string name="start_navi">실행</string>
+    <string name="tmap">Tmap</string>
+
+    <string name="com.crashlytics.useFirebaseAppId">true</string>
+
+    <string name="navi_to_home">집으로 안내합니다.</string>
+    <string name="navi_to_company">회사로 안내합니다.</string>
+    <string name="navi_to_start">내비를 실행합니다.</string>
+    <string name="run_to_start">앱을 실행합니다.</string>
+
+<!--    <string name="msg_to_navigate">\"%1$s\"</string>-->
+<!--    <string name="msg_to_navigate"><![CDATA[<font color=\'#e74c3c\'><u><b>"%1$s\"</b></u></font>]]></string>-->
+    <string name="msg_to_navigate"><![CDATA[<u><b>"%1$s\"</b></u>]]></string>
+<!--    <string name="msg_to_navigate">\"%1$s\" 으로 안내</string>-->
+
+    <string name="please_select_app">앱을 선택해주세요.</string>
+    <string name="tmap_install_problem">티맵설치에 문제가 있어, 호출 할 수 없습니다.</string>
+
+    <string name="title_noti_none">실시간 농산물 경매시세</string>
+
+    <string name="navi_auto_run_goto_setting"><![CDATA[\'내비 자동실행\'설정을 변경할 수 있습니다.]]></string>
+
+    <string name="accessibility_description">접근성 권한을 필요로 합니다.</string>
+
+    <string name="msg_turn_on_the_bluetooth">블루투스를 켜세요.</string>
+    <string name="msg_bluetooth_enabled">블루투스가 활성화 되었습니다.</string>
+
+
+    <string name="msg_confirm_do_data_network_connect">모바일 데이터가 꺼져있거나, 전절모드 등 네트워크 접속이 어려운 환경일 수 있습니다.\n단말의 설정을 확인해주세요.</string>
+    <string name="msg_confirm_turn_on_mobile_data">모바일 데이터를 켜시겠습니까?</string>
+    <string name="msg_do_not_rerun_for_seconds">%1$d초동안 재실행 안함</string>
+    <string name="msg_activate_accessibility_permission"><![CDATA[<font color=\'#D84315\'>\"접근성 권한\"</font>을 <font color=\'#D84315\'>켜세요</font>. [<font color=\'#D84315\'>터치</font>]]]></string>
+<!--    <string name="msg_activate_accessibility_permission"><![CDATA[<font color=\'#D84315\'>\"접근성 권한\"</font>을 <font color=\'#D84315\'>껏다</font> -> <font color=\'#D84315\'>켜세요</font>. [<font color=\'#D84315\'>터치</font>]]]></string>-->
+
+    <string name="msg_activate_accessibility_permission2"><![CDATA[<font color=\'#000000\'><b>접근성 서비스</b></font>가 <font color=\'#000000\'>\"<b>중지</b>\"</font> 상태입니다.]]></string>
+    <string name="msg_music_play_setting"><![CDATA[<font color=\'#e74c3c\'><u><b>음악 자동 재생 꺼짐</b></u></font>]]></string>
+    <string name="msg_activate_accessibility_permission3"><![CDATA[<font color=\'#000000\'><b>\"시작/종료\" 루틴</b></font>을 <font color=\'#000000\'>실행</font>할 수 <font color=\'#000000\'>없습니다</font>.]]></string>
+    <string name="msg_activate_permission"><![CDATA[<font color=\'#D84315\'><b>권한을 활성화하세요. [터치]</font>.]]></string>
+    <string name="msg_activate_accessibility_permission4"><![CDATA[접근성 서비스를 활성화 하세요. [터치]]]></string>
+
+    <string name="msg_activate_location_permission"><![CDATA[<font color=\'#D84315\'><b>위치 권한</b></font>을 <font color=\'#D84315\'>활성화</font>하세요. [<font color=\'#D84315\'>터치</font>]]]></string>
+    <string name="msg_activate_ignore_battery_permission"><![CDATA[<font color=\'#D84315\'><b>절전모드 권한</b></font>을 <font color=\'#D84315\'>활성화</font>하세요. [<font color=\'#D84315\'>터치</font>]]]></string>
+    <string name="msg_activate_notification_access_permission"><![CDATA[<font color=\'#D84315\'><b>알람 접근 권한</b></font>을 <font color=\'#D84315\'>활성화</font>하세요. [<font color=\'#D84315\'>터치</font>]]]></string>
+
+    <string name="msg_tmap_is_running">티맵이 실행중입니다.</string>
+    <string name="msg_app_is_running">"%1$s" 앱이 실행중입니다.</string>
+
+    <string name="msg_app_latest_update">"%1$s" 앱이 최신버전이 있습니다.\n업데이트 해주세요:)</string>
+    <string name="msg_app_latest_update_later">업데이트 미룸</string>
+
+    <string name="button.app_latest_update.later">나중에</string>
+    <string name="button.app_latest_update.now">지금 업데이트</string>
+
+    <string name="msg_no_app_selected">앱이 선택되지 않았습니다.</string>
+    <string name="limit_work_goto">출/퇴근 시간 제한으로 실행안함</string>
+    <string name="msg_enabled">동작이 활성화 되었습니다.</string>
+    <string name="msg_disabled">동작이 비활성화 되었습니다.</string>
+    <string name="msg_run_status_screen_on_not_running"><![CDATA["%1$s"-[실행 안함] : "화면 켜져 있음"]]></string>
+    <string name="msg_run_status_screen_off_not_running"><![CDATA["%1$s"-[실행 안함] : "화면 꺼져 있음"]]></string>
+    <string name="msg_run_status_screen_unlock_not_running"><![CDATA["%1$s"-[실행 안함] : "화면 잠김 해제"]]></string>
+    <string name="msg_usage_period_extended"><![CDATA[사용기간 : %1$s 까지 연장됨]]></string>
+    <string name="msg_run_status_screen_lock_not_running"><![CDATA["%1$s"-[실행 안함] : "화면 잠겨 있음"]]></string>
+
+    <string name="msg_canceled"><![CDATA[취소 되었습니다.]]></string>
+
+    <string name="msg_post_notifications"><![CDATA[알림 런타임 권한을 활성화하세요.]]></string>
+    <string name="msg_post_notifications_complete"><![CDATA[알림 런타임 권한을 활성화되었습니다.]]></string>
+
+    <string name="msg_adview_support_the_developers"><![CDATA[개발자 응원하기]]></string>
+    <string name="msg_adview_watching_ads"><![CDATA[광고 보기]]></string>
+    <string name="msg_adview_support_the_developers2"><![CDATA[개발자 응원]]></string>
+
+    <string name="msg_adview_user_earned_reward"><![CDATA[보상이 지급되었습니다.]]></string>
+    <string name="msg_adview_thankyou1"><![CDATA[광고시청 감사합니다.^^~ :)]]></string>
+    <string name="msg_adview_thankyou2"><![CDATA[응원 부탁드려요.]]></string>
+    <string name="msg_adview_thankyou3"><![CDATA[감사합니다.]]></string>
+    <string name="msg_free_lincense"><![CDATA[광고 시청 후, 무료 기간 연장]]></string>
+    <string name="msg_view_benefits"><![CDATA[무료혜택]]></string>
+    <string name="msg_get_rewarded"><![CDATA[보상받기]]></string>
+
+    <string name="msg_adview_if"><![CDATA[광고시청 하면]]></string>
+    <string name="msg_adview_is"><![CDATA[광고시청으로]]></string>
+    <string name="msg_adview_recuce_waittime"><![CDATA[대기시간이 <font color="#B40404">"%1$s"</font>초 → <font color="#B40404">"%2$s"</font>초]]></string>
+    <string name="msg_adview_license_expired"><![CDATA[사용기간이 만료되었습니다.]]></string>
+    <string name="msg_adview_license_extend"><![CDATA[광고를 보면 사용기간을 연장할 수 있습니다.]]></string>
+    <string name="msg_go_music_player"><![CDATA[플레이어에서 재생을 시작하세요.\n이후 동작에서 자동으로 재생됩니다.]]></string>
+    <string name="msg_go_music_player_notice"><![CDATA[한번은 플레이어에서 재생을 시작해야합니다.\n이후 동작에서 자동으로 재생됩니다.]]></string>
+    <string name="msg_license_user"><![CDATA[라이센스 사용자 입니다.]]></string>
+    <string name="msg_add_favorite_current_location"><![CDATA[현위치를 즐겨찾기에 저장할까요?]]></string>
+    <string name="msg_add_favorite_current_location_added"><![CDATA[즐겨찾기가 저장되었습니다.]]></string>
+    <string name="msg_remove_recent_poi"><![CDATA[\최근 기록을 삭제하시겠습니까?]]></string>
+    <string name="msg_remove_favorite_poi"><![CDATA[\즐겨찾기를 삭제하시겠습니까?]]></string>
+
+    <string name="msg_review_thankyou1"><![CDATA[리뷰 감사합니다.^^~ :)]]></string>
+
+    <string name="msg_disabled_noti_icon"><![CDATA[정상적인 앱 사용을 위해 "알림바"를 사용으로 설정하거나,\n "접근성" 허용을 해야합니다.]]></string>
+    <string name="force_stop_navi">네비게이션 앱을 종료합니다.</string>
+    <string name="force_stop_app">앱을 종료합니다.</string>
+    <string name="select_app">앱을 선택하세요.</string>
+    <string name="loading_applist">앱목록 조회중..\n잠시 기다리세요.</string>
+    <string name="loading_list">조회중..\n잠시 기다리세요.</string>
+    <string name="no_apps_running">실행중인 앱이 없습니다.</string>
+    <string name="start">시작</string>
+    <string name="end">종료</string>
+
+
+    <string name="app_exit_cancel">취소</string>
+    <string name="app_exit">종료</string>
+
+    <string name="loading_ad">광고로딩</string>
+    <string name="license_stop">사용기간 만료</string>
+    <string name="expiration">만료</string>
+
+    <string name="stops_touch">화면을 터치하면 중지됩니다.</string>
+    <string name="app_name_short">Drive Auto</string>
+    <string name="sec">초</string>
+    <string name="min">분</string>
+    <string name="stop_service">실행 대기 종료</string>
+    <string name="run">실행</string>
+    <string name="wait">대기</string>
+    <string name="run_wait">실행 대기</string>
+    <string name="run_speed_hide">숨기기</string>
+
+    <string name="label.on">켜기</string>
+    <string name="label.off">Off</string>
+    <string name="label.bluetooth">블루투스</string>
+    <string name="label.wifi">와이파이</string>
+    <string name="label.tethering">테더링</string>
+    <string name="label.airplane_mode">비행기모드</string>
+    <string name="label.mobile_data">모바일데이터</string>
+    <string name="label.screen_on">화면켜기</string>
+    <string name="label.lock">잠금</string>
+    <string name="label.completed_lock">잠금(완료)</string>
+    <string name="label.unlock">잠금해제</string>
+    <string name="label.play_music">음악재생</string>
+    <string name="label.home_screen">홈화면</string>
+    <string name="label.power_off">전원종료</string>
+    <string name="label.unknown">알 수 없음</string>
+
+    <string name="msg.startstop_onoff">"%1$s" "%2$s"</string>
+    <string name="msg.inapp_update">앱을 사용하기 위해서는 업데이트가 필요합니다.</string>
+    <string name="msg.exec_stopped">실행이 중지 되었습니다.</string>
+    <string name="msg.tmap_not_install">티맵이 설치되어 있지 않습니다.</string>
+    <string name="msg.app_not_install">"%1$s" 앱이 설치되어 있지 않습니다.</string>
+
+    <string name="msg.not_reg_home">집 주소를 등록해주세요.</string>
+    <string name="msg.not_reg_compmay">회사 주소를 등록해주세요.</string>
+
+    <string name="msg.uncaught_exception"><![CDATA[오류가 발생하였으나 복구되었습니다.\n\n만약 앱이 정상적으로 동작하지 않을 경우\n "%1$s" 접근성서비스를 \'껏다\' \'켜\'주세요.]]></string>
+    <string name="msg.uncaught_exception1"><![CDATA[비정상적으로 종료되었습니다.\n\n앱이 정상적으로 동작하지 않을 경우\n "%1$s" 접근성서비스를 \'껏다\' \'켜\'주세요.]]></string>
+    <string name="msg.limit_lower_version"><![CDATA[현재 장치에서는 "%1$s" 기능을 사용할 수 없습니다.]]></string>
+
+    <string name="msg_nottethering_mobiledata_notsupport">모바일 데이터를 사용할 수 없어 테더링이 불가능한 장치입니다.</string>
+    <string name="msg.run_only_onoff">On/Off 루틴만 동작합니다.</string>
+
+    <string name="setting">설정</string>
+    <string name="finish">종료</string>
+    <string name="button.label.on">켜기</string>
+
+<!--    <string name="com.crashlytics.android.build_id">1</string>-->
+
+    <string name="hold_time">안내\n유지</string>
+    <string name="hold_0min">안함</string>
+    <string name="hold_1min">1분</string>
+    <string name="hold_5min">5분</string>
+    <string name="hold_10min">10분</string>
+    <string name="hold_30min">30분</string>
+    <string name="hold_1hour">1시간</string>
+    <string name="hold_2hour">2시간</string>
+
+    <string name="msg_app_updated">앱이 업데이트 되었습니다.</string>
+    <string name="msg_permission_background_location">위치 액세스 권한을 [항상 허용]으로 설정하세요.</string>
+
+
+    <string name="app_boot_start">실시간 농산물 경매시세이 실행되었습니다.</string>
+
+</resources>

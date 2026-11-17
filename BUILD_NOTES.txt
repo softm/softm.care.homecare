@@ -1,0 +1,19 @@
+돌봄한눈 Android 하이브리드 앱
+운영 주소: https://homecare.designboard.net/
+패키지: net.softm.care.homecare
+
+원본 softm.god.whisper의 소스와 Gradle wrapper를 복사했습니다.
+.git, 캐시, 빌드 산출물, IDE 설정, 서명키, google-services.json은 복사하지 않았습니다.
+기존 kata/godwhisper/라이브러리 소스는 참고용이며 settings.gradle에서 제외했습니다.
+실제 앱 모듈은 app이며 기존 광고·결제·접근성 서비스는 실행되지 않습니다.
+
+JDK 17 및 Android SDK 36 환경에서 ./gradlew :app:assembleDebug 실행.
+결과: app/build/outputs/apk/debug/app-debug.apk
+릴리스: ./release.sh 로 검사 + 서명 APK + 서명 AAB 생성.
+서명 설정: Git 제외된 signing.properties, 기존 프로젝트의 서명키를 참조.
+APK: app/build/outputs/apk/release/app-release.apk
+AAB: app/build/outputs/bundle/release/app-release.aab
+키/암호는 저장소에 추가하지 않으며 스토어 업로드는 별도 진행.
+홈, 새로고침, 뒤로가기, HTTPS, 위치 권한 요청, 전화 다이얼, 외부 지도 링크 지원.
+웹사이트는 온라인 연결이 필요합니다. 웹 콘텐츠는 원래 웹 프로젝트에서 관리합니다.
+검증: 두 APK 빌드 및 lint. 실기기 위치/외부 지도 연동은 별도 확인이 필요합니다.

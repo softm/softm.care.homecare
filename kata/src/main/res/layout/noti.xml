@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:layout_margin="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:id="@+id/lnOverlay"
+    android:background="@drawable/transparent">
+<!--    android:background="#00000000"    -->
+<!--    android:background="#1f3442"-->
+<!--    android:background="#F7CDB7"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:id="@+id/lnPermission"
+        android:visibility="visible"
+        android:layout_gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/tvPermission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_activate_permission"
+            android:textStyle="bold"
+            android:textColor="@color/primaryDark_orange"
+            android:textSize="11sp"
+            ></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="left"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/btnHome"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/transparent"
+                android:paddingLeft="0dp"
+                android:paddingTop="3dp"
+                android:paddingRight="0dp"
+                android:paddingBottom="3dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_home_24" />
+
+
+            <ImageButton
+                android:id="@+id/btnCompany"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/transparent"
+                android:paddingLeft="0dp"
+                android:paddingTop="3dp"
+                android:paddingRight="0dp"
+                android:paddingBottom="3dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_corporate_fare_24" />
+
+            <ImageButton
+                android:id="@+id/btnStartNavi"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/transparent"
+                android:paddingLeft="0dp"
+                android:paddingTop="3dp"
+                android:paddingRight="0dp"
+                android:paddingBottom="3dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_launch_24"
+                android:enabled="true"
+                android:gravity="center"
+                android:tooltipText="@string/start"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            android:visibility="visible"
+            android:id="@+id/lnMain"
+            >
+            <!--            android:background="#f00"-->
+
+            <ImageButton
+                android:id="@+id/btnMain"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/transparent"
+                android:paddingLeft="0dp"
+                android:paddingTop="3dp"
+                android:paddingRight="0dp"
+                android:paddingBottom="3dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_layers_24"
+                android:tooltipText="@string/guide_gomain"
+                />
+
+            <ImageButton
+                android:id="@+id/btnSetting"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/transparent"
+                android:paddingLeft="0dp"
+                android:paddingTop="3dp"
+                android:paddingRight="0dp"
+                android:paddingBottom="3dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_settings_24"
+                android:tooltipText="@string/guide_gomain"
+                />
+
+            <ImageButton
+                android:id="@+id/btnSearch"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/transparent"
+                android:paddingLeft="0dp"
+                android:paddingTop="3dp"
+                android:paddingRight="0dp"
+                android:paddingBottom="3dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_manage_search_24"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/btnAppEnable"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:checked="true"
+                android:enabled="true"
+                android:visibility="visible"
+                android:paddingRight="5dp"
+                android:src="@drawable/toggle_on"
+                />
+            <ImageView
+                android:id="@+id/btnAppDisable"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:checked="true"
+                android:enabled="true"
+                android:visibility="visible"
+                android:paddingRight="5dp"
+                android:src="@drawable/toggle_off"
+                />
+<!--
+            <Switch
+                android:id="@+id/btnAppEnable"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:checked="true"
+                android:enabled="true"
+                android:visibility="visible"
+                android:paddingRight="10dp"
+                />
+
+            <Switch
+                android:id="@+id/btnAppDisable"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:checked="false"
+                android:enabled="true"
+                android:visibility="visible"
+                android:paddingRight="10dp" />
+-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

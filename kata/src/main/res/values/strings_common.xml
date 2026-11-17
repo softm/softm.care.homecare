@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alert_str">Notification</string>
+    <string name="alert_yes_str">Yes</string>
+    <string name="alert_no_str">No</string>
+    <string name="alert_confirm_str">Confirm</string>
+    <string name="alert_cancel_str">Cancel</string>
+    <string name="alert_negative_str">No</string>
+
+    <string name="proc_gid">tmp</string>
+
+    <string name="label_all">All</string>
+    <string name="label_spn_non_select">-select-</string>
+    <string name="label_spn_non_select2">Select</string>
+
+    <!-- Common -->
+    <string name="notice">Notification</string>
+    <string name="confirm">Confirm</string>
+    <string name="success">Success</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+
+    <!-- Common -->
+    <string name="ssl_cert_untrusted_msg">The security certificate for this site is not trusted.\nExit the Midong Fire Academy\'s app.\n</string>
+    <string name="ssl_invalid_update_01">Please update [Android System WebView] and [Chrome Browser-Google] in the Play Store to the latest version in order to use the Midong Fire Academy app normally.\nBut Android OS 7.0 (Nougat) If you are a smartphone customer, please update it in the following order.\n1. Settings> General> Apps> Chrome> Disable\n2. Play Store> Android Web View> Update\n3. Settings> General> Apps> Chrome> Enable</string>
+    <string name="ssl_invalid_update_02">The latest version of Android System WebView is required. Please use after update. Click the OK button below to go to the update page.</string>
+    <string name="common_back_close">Click Back again to close the app.</string>
+    <string name="common_back_popup_close">Click Back again to close the popup.</string>
+    <string name="common_go">Shortcut</string>
+    <string name="common_noti">Guide to App Access</string>
+    <string name="common_ok">OK</string>
+    <string name="common_change">Change</string>
+    <string name="common_close">Close</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_stop">Stop viewing</string>
+    <string name="common_notice">Notification</string>
+    <string name="common_confirm">Confirm</string>
+    <string name="common_success">Success</string>
+    <string name="common_delete">Delete</string>
+    <string name="common_error">Error</string>
+    <string name="common_no_msg">No content</string>
+    <string name="common_next">Next</string>
+    <string name="common_send">Send</string>
+    <string name="common_finish">Exit</string>
+    <string name="common_setting">Settings</string>
+    <string name="common_select_all">Select all</string>
+    <string name="error_server_connect_fail">Server connection is not smooth.</string>
+    <string name="error_permission_for_location">Location permission denied.\nPlease allow permission in settings (app info).</string>
+    <string name="error_permission_for_post_notifications">Notification permission denied.\nPlease allow permission in Settings (App Info).</string>
+    
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+
+</resources>

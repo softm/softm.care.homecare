@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- SOFTM-ADMOB-NATIVE START 날짜:20261012 : autorunnavi 계정에서 생성한 돌봄한눈 광고 단위로 앱·광고 소유 계정을 일치 -->
+    <string name="admob_app_id">ca-app-pub-4219853075548260~6852837399</string>
+    <string name="admob_native_ad_unit_id">ca-app-pub-4219853075548260/8791595868</string>
+    <string name="admob_interstitial_ad_unit_id">ca-app-pub-4219853075548260/5300082578</string>
+    <string name="admob_exit_banner_ad_unit_id">ca-app-pub-4219853075548260/3748161904</string>
+    <!-- SOFTM-ADMOB-NATIVE END -->
+</resources>

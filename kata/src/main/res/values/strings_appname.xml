@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name_com.skt.tmap.ku">TMAP</string>
+    <string name="app_name_com.locnall.KimGiSa">Kakao Navi</string>
+    <string name="app_name_com.nhn.android.nmap">NAVER Map, Navigation</string>
+    <string name="app_name_net.daum.android.map">KakaoMap - Map / Navigation</string>
+    <string name="app_name_com.google.android.apps.maps">Google Maps</string>
+    <string name="app_name_com.google.android.apps.mapslite">Google Maps Go</string>
+    <string name="app_name_com.google.android.apps.navlite">Navigation for Google Maps Go</string>
+    <string name="app_name_kt.navi">One Navi</string>
+    <string name="app_name_com.mnsoft.mappyobn">Mappy</string>
+    <string name="app_name_kr.mappers.AtlanSmart">Atlan</string>
+    <string name="app_name_com.waze">Waze</string>
+    <string name="app_name_net.osmand">Osmand</string>
+    <string name="app_name_net.osmand.plus">Osmand+</string>
+    <string name="app_name_com.sygic.aura">Sygic</string>
+    <string name="app_name_com.mapswithme.maps.pro">MAPS.ME</string>
+    <string name="app_name_com.baidu.BaiduMap">百度地图</string>
+    <string name="app_name_com.autonavi.minimap">高德地图</string>
+
+    <string name="app_name_com.sec.android.app.music">Samsung Music</string>
+    <string name="app_name_com.google.android.apps.youtube.music">YouTube Music</string>
+    <string name="app_name_com.google.android.youtube">YouTube</string>
+    <string name="app_name_com.apple.android.music">Apple Music</string>
+    <string name="app_name_com.spotify.music">Spotify</string>
+    <string name="app_name_com.media.music.mp3.musicplayer">Music player</string>
+    <string name="app_name_com.ktmusic.geniemusic">지니뮤직 - genie</string>
+    <string name="app_name_com.naver.vibe">네이버 VIBE (바이브)</string>
+    <string name="app_name_com.iloen.melon">멜론(Melon)</string>
+    <string name="app_name_com.soundcloud.android">SoundCloud</string>
+    <string name="app_name_musicplayer.musicapps.music.mp3player">Music Player</string>
+    <string name="app_name_skplanet.musicmate">FLO – 플로</string>
+    <string name="app_name_com.neowiz.android.bugs">벅스 - Bugs</string>
+    <string name="app_name_com.kakao.music">KakaoMusic</string>
+    <string name="app_name_com.miui.player">Mi Music</string>
+
+
+
+</resources>

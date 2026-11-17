@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_margin="0dp"
+    android:padding="0dp"
+    android:background="#ffffff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_margin="0dp"
+        android:background="#3498db"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/toolbar_height"
+            android:text="@string/app_name"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginTop="3dp"
+            android:textSize="@dimen/title_font_size"
+            android:singleLine="false"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_default"
+            android:enabled="true"
+            android:gravity="center"
+            android:minWidth="160dp"
+            android:minHeight="45dp"
+            android:text="▷"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/icon_font_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_gray"
+            android:enabled="true"
+            android:minWidth="160dp"
+            android:minHeight="45dp"
+            android:text="■"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/icon_font_size"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:text="@string/start_message"
+            android:textSize="@dimen/guide_button_font_size"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        >
+            <Button
+                android:id="@+id/btnHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home"
+                android:background="@drawable/chip_green"
+                android:enabled="true"
+                android:textColor="#FFFFFF"
+                android:minHeight="40dp"
+                android:minWidth="90dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+            <Button
+                android:id="@+id/btnCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/company"
+                android:background="@drawable/chip_gray"
+                android:enabled="true"
+                android:textColor="#FFFFFF"
+                android:minHeight="40dp"
+                android:minWidth="90dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                />
+            <Button
+                android:id="@+id/btnDrive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/drive"
+                android:background="@drawable/chip_gray"
+                android:enabled="true"
+                android:textColor="#FFFFFF"
+                android:minHeight="40dp"
+                android:minWidth="90dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1f3442"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/txtGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overlay_guide_5"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginTop="3dp"
+            android:textSize="@dimen/guide_text_font_size"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+
+        <Button
+            android:id="@+id/btnNavi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_default"
+            android:enabled="true"
+            android:minWidth="160dp"
+            android:minHeight="50dp"
+            android:text="@string/guide"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/guide_button_font_size"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
