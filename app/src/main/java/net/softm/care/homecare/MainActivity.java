@@ -5,8 +5,10 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.ActivityNotFoundException;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.webkit.*;
 import android.view.View;
 import android.widget.*;
@@ -19,6 +21,11 @@ public class MainActivity extends Activity {
     private WebView web;
     private ProgressBar progress;
     private LinearLayout error;
+    private LinearLayout landing;
+    private boolean firstContentShown;
+    private boolean mainFrameFailed;
+    private int loadGeneration;
+    private long firstLoadStartedAt;
     private HannunAds ads;
     private GeolocationPermissions.Callback locationCallback;
     private String locationOrigin;
@@ -39,6 +46,41 @@ public class MainActivity extends Activity {
         // SOFTM-FULL-WEB 날짜:20261007 : 중복 홈·새로고침 도구를 제거해 웹 지도에 화면 높이를 반환
         progress = new ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal);
         root.addView(progress, new LinearLayout.LayoutParams(-1, 6));
+
+        landing = new LinearLayout(this);
+        landing.setOrientation(LinearLayout.VERTICAL);
+        landing.setGravity(android.view.Gravity.CENTER);
+        landing.setPadding(dp(28), dp(32), dp(28), dp(32));
+        landing.setBackgroundColor(0xfff3f8f5);
+        ImageView landingIcon = new ImageView(this);
+        landingIcon.setImageResource(R.drawable.ic_launcher);
+        landingIcon.setContentDescription(null);
+        landing.addView(landingIcon, new LinearLayout.LayoutParams(dp(88), dp(88)));
+        TextView landingTitle = new TextView(this);
+        landingTitle.setText("돌봄한눈");
+        landingTitle.setTextColor(0xff174c3c);
+        landingTitle.setTextSize(26);
+        landingTitle.setGravity(android.view.Gravity.CENTER);
+        landingTitle.setTypeface(landingTitle.getTypeface(), android.graphics.Typeface.BOLD);
+        LinearLayout.LayoutParams titleLayout = new LinearLayout.LayoutParams(-1, -2);
+        titleLayout.topMargin = dp(20);
+        landing.addView(landingTitle, titleLayout);
+        TextView landingMessage = new TextView(this);
+        landingMessage.setText("내 주변 돌봄 정보를 준비하고 있어요");
+        landingMessage.setTextColor(0xff547067);
+        landingMessage.setTextSize(15);
+        landingMessage.setGravity(android.view.Gravity.CENTER);
+        LinearLayout.LayoutParams messageLayout = new LinearLayout.LayoutParams(-1, -2);
+        messageLayout.topMargin = dp(8);
+        landing.addView(landingMessage, messageLayout);
+        ProgressBar landingProgress = new ProgressBar(this);
+        landingProgress.setIndeterminate(true);
+        landingProgress.setContentDescription("돌봄한눈 불러오는 중");
+        LinearLayout.LayoutParams landingProgressLayout = new LinearLayout.LayoutParams(dp(48), dp(48));
+        landingProgressLayout.topMargin = dp(24);
+        landing.addView(landingProgress, landingProgressLayout);
+        root.addView(landing, new LinearLayout.LayoutParams(-1, 0, 1));
+
         error = new LinearLayout(this); error.setOrientation(LinearLayout.VERTICAL);
         error.setPadding(24, 48, 24, 24);
         TextView message = new TextView(this);
@@ -48,6 +90,8 @@ public class MainActivity extends Activity {
         retry.setOnClickListener(v -> retry()); error.addView(retry);
         root.addView(error); error.setVisibility(View.GONE);
         web = new WebView(this);
+        web.setBackgroundColor(Color.TRANSPARENT);
+        web.setVisibility(View.GONE);
         root.addView(web, new LinearLayout.LayoutParams(-1, 0, 1));
         LinearLayout adSection = new LinearLayout(this);
         root.addView(adSection, new LinearLayout.LayoutParams(-1, -2));
@@ -65,12 +109,22 @@ public class MainActivity extends Activity {
             }
             @Override public boolean shouldOverrideUrlLoading(WebView view, String url) { return route(Uri.parse(url)); }
             @Override public void onPageStarted(WebView view, String url, android.graphics.Bitmap icon) {
-                error.setVisibility(View.GONE); web.setVisibility(View.VISIBLE); progress.setVisibility(View.VISIBLE);
+                mainFrameFailed = false;
+                loadGeneration += 1;
+                if (!firstContentShown) firstLoadStartedAt = SystemClock.uptimeMillis();
+                error.setVisibility(View.GONE);
+                if (!firstContentShown) {
+                    landing.setVisibility(View.VISIBLE);
+                    web.setVisibility(View.GONE);
+                }
+                progress.setVisibility(View.VISIBLE);
             }
             /** SOFTM-APP-SHARE START 날짜:20261007 : WebView의 공유 API 부재를 앱 공유창으로 연결 */
             @Override public void onPageFinished(WebView view, String url) {
                 view.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
-                if (!trusted(Uri.parse(url))) return;
+                progress.setVisibility(View.GONE);
+                if (mainFrameFailed || !trusted(Uri.parse(url))) return;
+                waitForFirstContent(loadGeneration, 0);
                 view.evaluateJavascript("(function(){if(navigator.share)return;Object.defineProperty(navigator,'share',{configurable:true,value:function(data){return new Promise(function(resolve,reject){if(!data||!data.url){reject(new TypeError('공유 링크가 없습니다.'));return;}var result=window.prompt('SOFTM_SHARE_LINK',JSON.stringify({title:String(data.title||''),url:String(data.url)}));if(result==='shared')resolve();else reject(new Error('공유창을 열지 못했습니다.'));});}});})()", null);
             }
             /** SOFTM-APP-SHARE END */
@@ -119,7 +173,10 @@ public class MainActivity extends Activity {
             }
             @Override public void onGeolocationPermissionsHidePrompt() { locationCallback = null; }
         });
-        if (state == null || web.restoreState(state) == null) web.loadUrl(HOME);
+        if (state == null || web.restoreState(state) == null) {
+            web.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
+            web.loadUrl(HOME, java.util.Collections.singletonMap("Cache-Control", "no-cache"));
+        }
         ads = new HannunAds(this, adSection, new HannunAdConfig(
             getString(R.string.admob_native_ad_unit_id), null,
             getString(R.string.admob_interstitial_ad_unit_id),
@@ -146,9 +203,43 @@ public class MainActivity extends Activity {
         catch (ActivityNotFoundException e) { Toast.makeText(this, "연결할 앱이 설치되어 있지 않습니다.", Toast.LENGTH_LONG).show(); }
         return true;
     }
-    private void showError() { error.setVisibility(View.VISIBLE); web.setVisibility(View.GONE); progress.setVisibility(View.GONE); }
+    private int dp(int value) { return Math.round(value * getResources().getDisplayMetrics().density); }
+    private void waitForFirstContent(int generation, int attempt) {
+        if (firstContentShown || mainFrameFailed || generation != loadGeneration) return;
+        web.evaluateJavascript(
+            "(function(){var b=document.body;if(!b)return false;" +
+            "return b.innerText.trim().length>0&&b.getBoundingClientRect().height>0;})()",
+            value -> {
+                if (firstContentShown || mainFrameFailed || generation != loadGeneration) return;
+                boolean minimumLandingShown = SystemClock.uptimeMillis() - firstLoadStartedAt >= 600;
+                if ("true".equals(value) && minimumLandingShown) {
+                    firstContentShown = true;
+                    landing.setVisibility(View.GONE);
+                    error.setVisibility(View.GONE);
+                    web.setVisibility(View.VISIBLE);
+                    return;
+                }
+                if (attempt >= 60) {
+                    showError();
+                    return;
+                }
+                web.postDelayed(() -> waitForFirstContent(generation, attempt + 1), 250);
+            }
+        );
+    }
+    private void showError() {
+        mainFrameFailed = true;
+        loadGeneration += 1;
+        landing.setVisibility(View.GONE);
+        error.setVisibility(View.VISIBLE);
+        web.setVisibility(View.GONE);
+        progress.setVisibility(View.GONE);
+    }
     private void retry() {
         String url = web.getUrl();
+        mainFrameFailed = false;
+        if (!firstContentShown) landing.setVisibility(View.VISIBLE);
+        error.setVisibility(View.GONE);
         web.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
         web.loadUrl(url != null && trusted(Uri.parse(url)) ? url : HOME,
             java.util.Collections.singletonMap("Cache-Control", "no-cache"));
